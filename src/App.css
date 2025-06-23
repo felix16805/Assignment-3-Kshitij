@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f8ff;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 2rem;
+  z-index: 100;
+}
+nav a {
+  margin: 0 1rem;
+}
+main {
+  padding-top: 4rem;
+}
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
